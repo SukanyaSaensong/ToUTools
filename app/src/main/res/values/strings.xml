@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ToUTools</string>
+    <string name="open_drawer">Open_menu</string>
+    <string name="close_drawer">Close_menu</string>
+
+    <string name="item_home">หน้าหลัก</string>
+    <string name="item_catagory">หมวดหมู่</string>
+    <string name="item_notification">แจ้งเตือน</string>
+    <string name="item_favorite">รายการโปรด</string>
+    <string name="item_ListPost">รายการประกาศ</string>
+    <string name="item_history">ประวัติการเช่า</string>
+
+
+    <string name="item_setting">การตั้งค่า</string>
+    <string name="item_about">เกี่ยวกับ</string>
+    <string name="item_Condition">เงื่อนไขและวิธีการใช้งาน</string>
+    <string name="item_Help">ความช่วยเหลือและการสนัยสนุน</string>
+    <string name="item_logout">ออกจากระบบ</string>
+
+</resources>
