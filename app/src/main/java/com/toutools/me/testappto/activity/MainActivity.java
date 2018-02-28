@@ -47,7 +47,10 @@ public class MainActivity extends AppCompatActivity {
         initToolbar();
         initInstances();
 
-
+if (savedInstanceState ==null){
+    getSupportFragmentManager().beginTransaction()
+            .add(R.id.container,HomeFragment.newInstance()).commit();
+}
     }
 
     private void initToolbar() {
@@ -115,10 +118,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main, menu);
-        MenuItem searchItem = menu.findItem(R.id.action_search);
+
+       /* MenuItem searchItem = menu.findItem(R.id.action_search);
         final SearchView searchView = (SearchView) MenuItemCompat.getActionView(searchItem);
         searchItem.expandActionView();
-        searchView.requestFocus();
+        searchView.requestFocus();*/
 
 
        /* int searchImgId = android.support.v7.appcompat.R.id.search_button;
@@ -130,7 +134,7 @@ public class MainActivity extends AppCompatActivity {
         editText.setTextColor(Color.BLACK);
         editText.setHintTextColor(Color.BLACK);*/
 
-        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+/*        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
                 searchView.clearFocus();
@@ -141,7 +145,7 @@ public class MainActivity extends AppCompatActivity {
             public boolean onQueryTextChange(String newText) {
                 return false;
             }
-        });
+        });*/
         return super.onCreateOptionsMenu(menu);
     }
 

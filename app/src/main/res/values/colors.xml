@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#fc6f04</color>
-    <color name="colorPrimaryDark">#fd820f</color>
-    <color name="colorAccent">#f4a209</color>
+    <color name="colorPrimary">#FF9100</color>
+    <color name="colorPrimaryDark">#F57C00</color>
+    <color name="colorAccent">#FFAB40</color>
 
+    <color name="viewBg">#f1f5f8</color>
+    <color name="album_title">#4c4c4c</color>
 
-    <color name="colorPrimaryOne">#fc6f04</color>
-    <color name="colorPrimaryTwo">#fd820f</color>
-    <color name="colorAccentOne">#f4a209</color>
 </resources>

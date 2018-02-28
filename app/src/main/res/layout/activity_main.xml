@@ -7,6 +7,12 @@
     android:layout_height="match_parent"
     tools:context="com.toutools.me.testappto.activity.MainActivity">
 
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
     <android.support.design.widget.CoordinatorLayout
         android:id="@+id/rootLayout"
         xmlns:android="http://schemas.android.com/apk/res/android"
@@ -42,10 +48,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-        <FrameLayout
-            android:id="@+id/container"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+
     </LinearLayout>
 </android.support.design.widget.CoordinatorLayout>
 

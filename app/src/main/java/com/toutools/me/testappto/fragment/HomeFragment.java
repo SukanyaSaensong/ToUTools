@@ -14,10 +14,27 @@ import com.toutools.me.testappto.R;
  */
 
 public class HomeFragment extends Fragment {
+
+    public  HomeFragment(){
+        super();
+    }
+
+    public static HomeFragment newInstance() {
+        HomeFragment fragment = new HomeFragment();
+        Bundle args = new Bundle();
+        fragment.setArguments(args);
+        return fragment;
+    }
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_home,container,false);
+       View rootview = inflater.inflate(R.layout.fragment_home,container,false);
+
+       initInstances(rootview);
+       return rootview;
+    }
+
+    private void initInstances(View rootview) {
     }
 
 
@@ -26,4 +43,34 @@ public class HomeFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
     }*/
+
+    @Override
+    public void onStart() {
+        super.onStart();
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+    }
+
+    /*
+     * Save Instance State Here
+     */
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        // Save Instance State here
+    }
+
+    /*
+     * Restore Instance State Here
+     */
+    @Override
+    public void onActivityCreated(Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        if (savedInstanceState != null) {
+            // Restore Instance State here
+        }
+    }
 }

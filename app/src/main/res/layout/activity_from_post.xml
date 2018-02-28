@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context="com.toutools.me.testappto.activity.FromPostActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="กรอกข้อมูล"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/EditTextFullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="20dp"
+        android:gravity="start"
+        android:textSize="20sp"
+        android:hint="ชื่อเครื่องมือ" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tvV"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="เลือกหมวดหมู่เครื่องมือ" />
+
+        <Spinner android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/english_club">
+
+        </Spinner>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/EditTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:gravity="start"
+        android:hint="ราคาให้เช่า "
+        android:textSize="20sp"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/EditTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginTop="2dp"
+        android:gravity="start"
+        android:hint="รายละเอียดให้ครบถ้วน"
+        android:textSize="20sp"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="start"
+        android:hint="ระบุพื้นที่"
+        android:textSize="20sp"
+        android:inputType="text" />
+    <EditText
+        android:id="@+id/EditTextThone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="start"
+        android:hint="เบอร์มือถือ"
+        android:textSize="20sp"
+        android:inputType="number" />
+
+
+
+    <Button
+        android:id="@+id/ButtonRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EditTextPassword"
+        android:layout_marginTop="20dp"
+        android:text="ยืนยันข้อมูล" />
+
+
+
+</LinearLayout>
+
+

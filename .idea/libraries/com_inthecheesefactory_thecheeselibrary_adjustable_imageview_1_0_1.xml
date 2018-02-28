@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.inthecheesefactory.thecheeselibrary:adjustable-imageview-1.0.1">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/adjustable-imageview-1.0.1.aar/c1f4ee44d3a725ed4ebe1ca2ab934858/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/adjustable-imageview-1.0.1.aar/c1f4ee44d3a725ed4ebe1ca2ab934858/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.inthecheesefactory.thecheeselibrary/adjustable-imageview/1.0.1/d0c72d127068cb6fc9cfc1d0f40859cb1cc855f8/adjustable-imageview-1.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
