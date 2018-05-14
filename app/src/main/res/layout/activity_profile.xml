@@ -1,44 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_dashboard"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFD180"
-    android:padding="5dp"
+    android:orientation="vertical"
+    tools:context="com.toutools.me.toutools.activity.ProfileActivity">
 
-    tools:context="com.toutools.me.testappto.activity.ProfileActivity">
-    <TextView
-        android:text="ยินดีต้อนรับเข้าสู่ระบบ\nคุณกำลังเข้าใช้งานด้วยอีเมล:\n  "
-        android:layout_width="wrap_content"
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="150dp"
-        android:id="@+id/textView"
-        android:textColor="#6b6a6a"
-        android:textSize="30dp"
-        android:gravity="center"
-        />
+        android:background="@color/colorPrimary" />
 
     <TextView
-        android:text=""
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/EmailShow"
-        android:textColor="#ef8c41"
-        android:textSize="20dp"
-        android:gravity="center"
-        android:layout_below="@+id/textView"/>
+        android:text="Tap on camera to choose profile picture"
+        android:textAlignment="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:background="@drawable/icon_camera"
+            android:scaleType="centerCrop" />
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/editTextDisplayName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Display Name" />
+
+    <EditText
+        android:id="@+id/editTextDisplayEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Display Email" />
+
+
 
     <Button
-        android:layout_marginTop="30dp"
-        android:layout_width="match_parent"
-        android:layout_below="@+id/EmailShow"
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/button"
-        android:text="ออกจากระบบ"/>
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/rounded_button_solid"
+        android:paddingLeft="55dp"
+        android:paddingRight="55dp"
+        android:text="Save"
+        android:textAllCaps="false" />
 
-</RelativeLayout>
+</LinearLayout>

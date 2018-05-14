@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.HistoryMessageActivity">
+    <TextView
+        android:id="@+id/tvHead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="การโปรโมท"
+        android:textSize="28dp"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+<TextView
+    android:id="@+id/tvDP"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:maxLines="20"
+    android:text="การโปรโมทประกาศทาง ToUTools ดำเนินการโดยการสร้างโฆษณาสำหรับเประกาศของคุณซึ่งจะช่วยให้คุณเพิ่มการรับรู้และการมองเห็นของธุรกิจของคุณ การโปรโมทเพจเป็นวิธีเข้าถึงผู้คนที่สนใจเนื้อหาหรือธุรกิจอย่างคุณได้อย่างรวดเร็ว ตัวเลือกปุ่มโปรโมทจะช่วยเชื่อมต่อธุรกิจของคุณกับผู้คนที่มีผลต่อคุณมากขึ้น
+ และที่ดีกว่านั้นคือ โฆษณาของคุณจะปรากฏบนหน้าหลักเสมอ ซึ่งจะเพิ่มโอกาสที่โฆษณาของคุณจะเข้าถึงกลุ่มเป้าหมายที่ต้องการ"/>
+</LinearLayout>

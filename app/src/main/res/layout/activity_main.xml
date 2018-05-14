@@ -5,7 +5,8 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.toutools.me.testappto.activity.MainActivity">
+    tools:context="com.toutools.me.toutools.activity.MainActivity">
+
 
     <FrameLayout
         android:id="@+id/container"
@@ -13,56 +14,49 @@
         android:layout_height="match_parent" />
 
 
-    <android.support.design.widget.CoordinatorLayout
-        android:id="@+id/rootLayout"
-        xmlns:android="http://schemas.android.com/apk/res/android"
+
+    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/rootLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ListView
-            android:id="@+id/lvToDoList"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
 
+<!--
         <android.support.design.widget.FloatingActionButton
             android:id="@+id/fabBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|right"
             android:layout_margin="16dp"
-            android:src="@drawable/ic_plus"
-            app:layout_anchor="@id/lvToDoList"
-            app:layout_anchorGravity="bottom|right|end"
-            app:layout_behavior="com.toutools.me.testappto.ScrollAwareFABBehavior" />
+            android:src="@drawable/ic_plus"/>
 
+-->
+        <LinearLayout
 
-    <LinearLayout
-
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <include
-            layout="@layout/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-
-    </LinearLayout>
-</android.support.design.widget.CoordinatorLayout>
+            <include
+                layout="@layout/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </android.support.design.widget.CoordinatorLayout>
 
     <android.support.design.widget.NavigationView
         android:id="@+id/navigation"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        app:headerLayout="@layout/nav_header"
         android:background="@android:color/white"
-        app:menu="@menu/navigation_menu" >
-    </android.support.design.widget.NavigationView>
-       <!-- app:headerLayout="@layout/nav_header"
-        app:itemIconTint="@color/nav_item_icon_tint_color"
-        app:itemTextColor="@color/nav_item_text_color"-->
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/navigation_menu"/>
+    <!-- app:headerLayout="@layout/nav_header"
+     app:itemIconTint="@color/nav_item_icon_tint_color"
+     app:itemTextColor="@color/nav_item_text_color"-->
+
+
 
 </android.support.v4.widget.DrawerLayout>
